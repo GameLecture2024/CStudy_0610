@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\HelloWorld\\newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\HelloWorld\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "newGame.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HelloWorld\\newGame.c",
+              "RelativeDocumentMoniker": "newGame.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\HelloWorld\\newGame.c",
+              "RelativeToolTip": "newGame.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-06-10T08:36:18.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "hello.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\HelloWorld\\hello.c",
+              "RelativeDocumentMoniker": "hello.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\HelloWorld\\hello.c",
+              "RelativeToolTip": "hello.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-06-10T08:25:27.353Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
