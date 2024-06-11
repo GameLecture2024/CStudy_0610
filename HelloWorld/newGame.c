@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main1() {
     int guess, number, attempts = 0;
     srand(time(0)); // 난수 생성을 위한 시드 설정
 
