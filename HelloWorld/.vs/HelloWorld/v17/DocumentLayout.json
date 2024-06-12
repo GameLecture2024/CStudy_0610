@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uBCC0\uC218.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:\uBCC0\uC218.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:hello.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|solutionrelative:\uCEF4\uD30C\uC77C\uB7EC.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FF44C1EF-5C74-42A1-A5FC-C121D63DA5E6}|HelloWorld.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\newGame.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "\uBCC0\uC218.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uBCC0\uC218.c",
+              "RelativeDocumentMoniker": "\uBCC0\uC218.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uBCC0\uC218.c",
+              "RelativeToolTip": "\uBCC0\uC218.c",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-06-12T07:09:39.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "\uCEF4\uD30C\uC77C\uB7EC.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c",
               "RelativeDocumentMoniker": "\uCEF4\uD30C\uC77C\uB7EC.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\\uCEF4\uD30C\uC77C\uB7EC.c",
               "RelativeToolTip": "\uCEF4\uD30C\uC77C\uB7EC.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAkAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-06-11T07:47:16.289Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "newGame.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\newGame.c",
               "RelativeDocumentMoniker": "newGame.c",
@@ -58,7 +75,7 @@
               "RelativeDocumentMoniker": "hello.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\hello.c",
               "RelativeToolTip": "hello.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-06-10T08:25:27.353Z",
               "EditorCaption": ""
