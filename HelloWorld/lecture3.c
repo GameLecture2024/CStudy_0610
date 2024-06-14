@@ -25,10 +25,9 @@
 
 // 초기화(Initialize)
 // 변수에 처음으로 데이터를 할당하는 것
+#include "lectures.h"
 
-#include <stdio.h>
-
-int main()
+void lecture3()
 {
 	int a = 5 + 3;
 	a = 4 + 7;
@@ -63,6 +62,4 @@ int main()
 	float Fahrenheit = 9.0f / 5.0f * Celsius + 32;	// 화씨
 
 	printf("섭씨 to 화씨 : %.3f", Fahrenheit);
-
-	return 0;
 }

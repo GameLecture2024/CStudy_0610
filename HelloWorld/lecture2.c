@@ -15,14 +15,13 @@
  날 짜    : 2024-06-11
  학습내용 : 컴파일러, Hello World, 주석
  */
-#include <stdio.h>
 
-int main()
+#include "lectures.h"
+
+void lecture2() 
 {
 	printf("☆☆☆★☆☆☆ \n");
 	printf("☆☆★★★☆☆ \n");
 	printf("☆★★☆★★☆ \n");
 	printf("★★☆☆☆★★ \n");
-
-	return 0;
 }

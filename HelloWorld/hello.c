@@ -2,7 +2,6 @@
 
 int main(void)
 {
-	printf("Hello Study! \n �ȳ��� ������ �׽�Ʈ");
-	printf("�ȳ��� ������");
+	printf("Hello World!");
 	return 0;
 }
