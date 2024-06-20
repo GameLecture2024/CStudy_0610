@@ -103,7 +103,7 @@ void lecture8()
 
 	printf("c_num에 0.1을 30번 더한 값이 무엇인가요? %f\n", c_num);
 
-	printf("비트 연산 문제\n");
+	printf("\n★★비트 연산 연습 문제 ★★\n");
 
 	// 두 개의 정수 변수에 2진수 표현된 값이 있다. d 와 e의 비트 연산 결과를 기호를 사용하지 않고 출력해보세요. 
 	int d = 0b00001111; 
@@ -114,34 +114,56 @@ void lecture8()
 
 	d = 0b0001111;
 	e = 0b0010010;
-	my_int = 0b00;
+	my_int = 0b0011111;
 	result = d | e;
 	printf("내가 계산한 값 %d 실제 값 %d\n", my_int, result);
 
 	d = 0b0001111;
 	e = 0b0010010;
-	my_int = 0b00;
+	my_int = 0b0011101;
 	result = d ^ e;
 	printf("내가 계산한 값 %d 실제 값 %d\n", my_int, result);
 
 	char overFlowedValue = 0b01000000;
-	overFlowedValue << 1; // 어떤 값이 나올까요? 왜 그런 값이 나올까요?
+	//                     0b01000000; <<1
+	//                     0b10000000; -128
+	//                     0b01111111;
+	//                     0b10000000;
+	// 2의 보수 반전 + 1;
+	// char 1바이트 크기.. 표현할 수 있는 수의 범위?
+	// 1바이트 정수.. 표현할수 있는 음수 범위, 양수 범위
+	// 양의 정수 범위 : 0b[0][111][1111] : 0, 1 ~  127
+	// 음의 정수 범위 : 0b[1][000][0000] : -128 ~ -1
+	//                 0b[1][111][1111]	: -1
+	// -128 ~ 127 ( -128 ~ 127) 256(2e8)
+
+	// 0b01000000 << 2;
+	// overFlowedValue = 0b100000000;
+	//                   0b000000100; >> 8
+	overFlowedValue << 2; // 어떤 값이 나올까요? 왜 그런 값이 나올까요?
 	// printf 출력해보기
+	printf("%d\n", overFlowedValue);
 
 	overFlowedValue = 0b0000100;
-	overFlowedValue >> 5; // 어떤 값이 나올까요?
+	overFlowedValue >> 5; // 어떤 값이 나올까요?   0이 나온다.
 	// printf 출력해보기
 
 	// 10진수 하나 입력 받아서, 해당 수의 2의 보수 값을 출력하는 코드를 작성해보세요. (~)연산자 사용해서.
 	int twoComplement;
 	scanf_s("%d", &twoComplement);
-	printf("2의 보수의 값을 출력 : %d", twoComplement);
+	twoComplement = ~twoComplement + 1;
+	printf("2의 보수의 값을 출력 : %d\n", twoComplement);
 
 
 	// 시프트 연산
 	// 10진수 하나 입력 받아서, 해당 수에 8를 곱한후 32로 나누는 코드를 x,/없이 작성해보세요.
 	// 8과 32가 반드시 코드에 들어가도록. 비트 연산자(>>, <<) 사용할 것.
-	int shiftNum;
-	scanf_s("%d", &shiftNum);
+	char shiftNum = 64; // 4
+	// 0b01000000;
+	//scanf_s("%d\n", &shiftNum);
+	//shiftNum <<= 3;
+	//shiftNum = shiftNum << 3 >> 5; // 8을 곱한 후 32로 나눈다. 4로 나눈다.
+	shiftNum = shiftNum << 3;
+	shiftNum = shiftNum >> 5;
 	printf("8을 곱한 후 32로 나눈 값 : %d", shiftNum);
 }
