@@ -32,5 +32,42 @@ int main(void)
 
 	printf("플레이어의 값은 %d 입니다.", userValue);
 	
+	// 플레이어의 값과 컴퓨터의 값이 같으면 축하합니다. 게임을 클리어하셨습니다.
+	if (computerValue == userValue) {
+		printf("컴퓨터의 값과 일치합니다. 축하합니다.");
+	}
+	else 
+	{
+		printf("다시 시도해보세요.");
+
+		scanf_s("%d", &userValue);
+		printf("플레이어의 값은 %d 입니다.", userValue);
+
+		if (computerValue == userValue) 
+		{
+			printf("컴퓨터의 값과 일치합니다. 축하합니다.");
+		}
+		else 
+		{
+			printf("다시 시도해보세요.");
+
+			scanf_s("%d", &userValue);
+			printf("플레이어의 값은 %d 입니다.", userValue);
+
+			if (computerValue == userValue)
+			{
+				printf("컴퓨터의 값과 일치합니다. 축하합니다.");
+			}
+			else 
+			{
+
+			}
+		}
+	}
+
+	// 플레이어의 값과 컴퓨터의 값이 다르면 틀렸습니다. 다시 시도해보세요.
+
+	// 다시 시도를 하려면 어떻게 해야 할까? -> 내일 강의
+
 	return 0;
 }
