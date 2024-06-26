@@ -24,3 +24,8 @@ void lecture12_2();
 /// while 반복문
 /// </summary>
 void lecture12_3();
+/// <summary>
+/// switch 조건문
+/// </summary>
+void lecture13();
+void lecture13_2();
