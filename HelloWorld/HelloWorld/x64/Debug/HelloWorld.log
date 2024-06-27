@@ -1,2 +1,7 @@
-﻿  lecture13_switch.c
+﻿  lecture14.c
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture14.c(36,2): warning C4013: 'printf'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture14.c(50,2): warning C4013: 'scanf_s'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture14.c(68,15): warning C4013: 'AddTwoNumber'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture14.c(80,24): warning C4013: 'Compare'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\lecture14.c(80,33): warning C4013: 'AbsoluteNum'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
   HelloWorld.vcxproj -> C:\Users\Administrator\Desktop\CStudy_0610\HelloWorld\x64\Debug\HelloWorld.exe
