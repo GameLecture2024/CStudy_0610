@@ -55,6 +55,9 @@ int InputNumber()
 
 void lecture14() 
 {
+	// 전역 변수 선언
+	
+
 	// 함수 호출하는 법
 	// 함수 이름( );
 	
