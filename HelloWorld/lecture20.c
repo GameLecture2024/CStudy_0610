@@ -102,13 +102,13 @@ void DoublePointerCallByRef(int** ref)
 
 void DecimalToBinaray(int num) // 10 1010(2)
 {
-	int binaray[20] = {0};
+	int binaray[1000000] = {0};	  // 2
 	int pos = 0;
 
 	while (1)
 	{
 		binaray[pos] = num % 2;
-		num / 2;
+		num = num / 2;
 		pos++;
 		
 		if (num ==0)
@@ -171,27 +171,9 @@ void lecture20()
 	int input;
 	scanf_s("%d", &input);
 	
-	int binaray[20] = { 0 };
-	int pos = 0;
-	
-	while (1)
-	{
-		binaray[pos] = num % 2;
-		num = num / 2;
-		pos++;
-	
-		if (num == 0)
-			break;
-	}
-
 	// binaray[pos] <- 이진수 대입
 
-	for (int i = pos - 1; i >= 0; --i) {
-		printf("%d", binaray[i]);
-	}
-
-
-	//DecimalToBinaray(input);
+	DecimalToBinaray(input);
 
 	// 11을 2진수로 만드는 법
 	// 11/2   =  5 + 1
