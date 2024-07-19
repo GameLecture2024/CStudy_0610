@@ -93,6 +93,9 @@
     <ClCompile Include="lecture16.c">
       <Filter>소스 파일\게프1</Filter>
     </ClCompile>
+    <ClCompile Include="lecture22.c">
+      <Filter>소스 파일\게프2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lectures.h">
