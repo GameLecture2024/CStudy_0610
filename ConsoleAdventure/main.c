@@ -50,10 +50,43 @@ void GoToTargetPos(int a, int b, char* s)
 	printf("%s", s);
 }
 
-void MakeMap(char Wall, char(*map)[ROWS])
+void MakeMap(char Wall, char(*map)[ROWS]) // 2차원 배열. 맵에 존재하는 데이터 설정
 {
+	for (int i = 0; i < COLS; ++i)	  // 세로 x 가로 빈 공간
+	{
+		for (int j = 0; j < ROWS; ++j)
+		{
+			map[i][j] = ' ';
+		}
+	}
 
+	for (int i = 0; i < COLS; ++i)	// 가로0, 가로 ROWS -1 세로 그려라
+	{
+		map[i][0] = Wall;
+		map[i][ROWS - 1] = Wall;
+	}
+	for (int i = 0; i < ROWS; ++i)
+	{
+		map[0][i] = Wall;
+		map[COLS - 1][i] = Wall;
+	}
 }
+
+void RenderMap() // 만들어진 맵을 그리는 함수
+{
+	int mapIndex = 0;
+
+	for (int i = 0; i < COLS; ++i)
+	{
+		for (int j = 0; j < ROWS; ++j)
+		{
+			mapString[mapIndex++] = map[i][j];
+		}
+		mapString[mapIndex++] = '\n';
+	}
+	mapString[mapIndex] = '\0';
+}
+
 
 
 void GameInfo()	// 게임의 정보를 출력하는 함수를 담당.
@@ -72,44 +105,21 @@ int main()
 	// 플레이어의 정보
 	int playerX = 15, playerY = 15;     // 플레이어의 시작 좌표
 	bool itemFound = false; // 아이템을 발견하면 true만들어 준다.
+	bool canMove = true;	// canMove가 true일 때만 움직여라.
 
 	int itemX = 8, itemY = 8;
 
 	// 게임 맵 세팅
-	//MakeMap();
-
-	for (int i = 0; i < COLS; ++i)
-	{
-		for (int j = 0; j < ROWS; ++j)
-		{
-			map[i][j] = ' ';
-		}
-	}
-
-	for (int i = 0; i < COLS; ++i)
-	{
-		map[i][0] = '@';
-		map[i][ROWS - 1] = '#';
-	}
-	for (int i = 0; i < ROWS; ++i)
-	{
-		map[0][i] = '#';
-		map[COLS-1][i] = '#';
-	}
-
-	int mapIndex = 0;
-
-	for (int i = 0; i < COLS; ++i)
-	{
-		for (int j = 0; j < ROWS; ++j)
-		{
-			mapString[mapIndex++] = map[i][j]; 
-		}
-		mapString[mapIndex++] = '\n';
-	}
-	mapString[mapIndex] = '\0';
 
 
+
+	// 테두리(외벽) 설정
+	MakeMap('#', map);
+	// 내벽 데이터 넣어주기.
+	map[10][10] = '#';
+
+	RenderMap();
+	
 
 	// 게임이 시작하자 마자 종료되는 이슈. -> 무한 반복문
 	while (1)
