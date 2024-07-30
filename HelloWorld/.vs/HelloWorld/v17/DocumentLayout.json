@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\HelloWorld\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7DDF5041-7D60-4180-9E2D-03E10C845472}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7DDF5041-7D60-4180-9E2D-03E10C845472}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\Function.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -12,7 +15,7 @@
       "AbsoluteMoniker": "D:0:0:{7DDF5041-7D60-4180-9E2D-03E10C845472}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DDF5041-7D60-4180-9E2D-03E10C845472}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{7DDF5041-7D60-4180-9E2D-03E10C845472}|..\\MonsterDataManager\\MonsterDataManager.vcxproj|C:\\PROGRAM FILES (X86)\\WINDOWS KITS\\10\\INCLUDE\\10.0.22621.0\\UCRT\\STDIO.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,56 +25,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 185,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "stdio.h",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ToolTip": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\ucrt\\stdio.h",
+              "ViewState": "AQIAAD8EAAAAAAAAAAAcwEcEAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-07-30T07:54:41.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Function.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\Function.c",
               "RelativeDocumentMoniker": "..\\MonsterDataManager\\Function.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\Function.c",
               "RelativeToolTip": "..\\MonsterDataManager\\Function.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAhAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAmwB4AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-07-29T08:26:36.262Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Function.h",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\Function.h",
               "RelativeDocumentMoniker": "..\\MonsterDataManager\\Function.h",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\Function.h",
               "RelativeToolTip": "..\\MonsterDataManager\\Function.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-07-29T08:26:23.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
               "RelativeDocumentMoniker": "..\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
               "RelativeToolTip": "..\\MonsterDataManager\\\uAD6C\uC870\uCCB4 \uC608\uC81C.c",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGYAAABAAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-07-29T07:01:56.683Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\main.c",
               "RelativeDocumentMoniker": "..\\MonsterDataManager\\main.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\main.c",
               "RelativeToolTip": "..\\MonsterDataManager\\main.c",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAACwAAAAVAAAA",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-07-29T07:01:18.745Z",
               "EditorCaption": ""
