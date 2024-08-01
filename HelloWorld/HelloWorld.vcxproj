@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileFunc.c" />
     <ClCompile Include="lecture1.c" />
     <ClCompile Include="lecture10.c" />
     <ClCompile Include="lecture11.c" />
@@ -147,6 +148,7 @@
     <ClCompile Include="lecture23.c" />
     <ClCompile Include="lecture24.c" />
     <ClCompile Include="lecture25.c" />
+    <ClCompile Include="lecture26.c" />
     <ClCompile Include="lecture3.c" />
     <ClCompile Include="lecture4.c" />
     <ClCompile Include="lecture5.c" />
@@ -157,6 +159,7 @@
     <ClCompile Include="메인.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FileFunc.h" />
     <ClInclude Include="lectures.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
