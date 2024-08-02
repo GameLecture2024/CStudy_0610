@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "Function.h"
-#define filename "monsterData.txt"
+#define filename "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\MonsterDataManager\\monsterData.txt"
 
 #include <stdlib.h>
 
@@ -103,7 +103,7 @@ void LoadMonsterData(Monster* monsterList, int* totalCount)
 	fclose(fp);
 }
 
-int main()
+int main(void)
 {
 	int playerInput = 0;
 
@@ -155,5 +155,5 @@ int main()
 
 	PrintMonsterList(monsterGroup, totalMonsterCount);
 
-
+	return 0;
 }
