@@ -129,9 +129,11 @@
   <ItemGroup>
     <ClCompile Include="Console.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="MyGameFunc.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
+    <ClInclude Include="MyGameFunc.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

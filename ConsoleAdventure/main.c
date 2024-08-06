@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include "Console.h"
+#include "MyGameFunc.h"
 
 #define ROWS 30	 // 가로
 #define COLS 30	 // 세로   Collums(기둥)
+#define filename "playerData.txt"
 
 char map[COLS][ROWS] = { 0 };	   // 맵 안에있는 데이터
 // ROWS + 1 : 개행 문자 '\n' 더해준 것.
@@ -87,19 +89,81 @@ void RenderMap() // 만들어진 맵을 그리는 함수
 	mapString[mapIndex] = '\0';
 }
 
-
-
-void GameInfo()	// 게임의 정보를 출력하는 함수를 담당.
+typedef struct PlayerData
 {
+	char name[30]; // 이름을 저장하기 위한 배열
+	int score;     // 정수 형태로 점수를 저장한다.
+}PlayerData;
 
+
+void SavePlayerData(PlayerData* player, int totatlCount)
+{
+	FILE* fp = fopen(filename, "w");
+
+	if (fp == NULL)
+	{
+		perror("파일 쓰기 실패!\n");
+	}
+
+	for (int i = 0; i < totatlCount; ++i)
+	{
+		fprintf(fp, "%s %d \n", player[i].name, player[i].score);
+	}
+
+	fclose(fp);
 }
+
+void LoadPlayerData(PlayerData* player, int* totalCount)
+{
+	FILE* fp = fopen(filename, "r");
+
+	if (fp == NULL)
+	{
+		perror("파일 읽기 실패!\n");
+		return;
+	}
+
+	int count = 0;
+	char ch;
+
+	if (fgetc(fp) != EOF)
+	{
+		count = 1;
+	}
+	fseek(fp, 0, SEEK_SET); // fp가 가리키는 주소를 파일의 시작으로 이동
+	while (fgetc(fp) != EOF)
+	{
+		ch = fgetc(fp);	    // 
+		if (ch == '\n') {
+			count++;
+		}
+	}
+	fseek(fp, 0, SEEK_SET);
+
+	*totalCount = count;
+
+	for (int i = 0; i < count; ++i)
+	{
+		fscanf_s(fp, "%s %d ", (player + i)->name, 30, &(player + i)->score);
+	}
+
+	fclose(fp);
+}
+
+// 플레이어 데이터를 어떤 방식으로 저장할지
+
 
 int main()
 {
-	printf("Hello World!\n");
-	Clear(); // 콘솔을 전부 지워주는 기능
+	PlayerData allPlayerData[10];
+	int totalCount = 0;
 
-	SetConsoleSize(50,50);
+	LoadPlayerData(allPlayerData, &totalCount);
+	printf("%s %d ", allPlayerData[0].name, allPlayerData[0].score);
+
+	SelectStartMenu();
+
+	SetConsoleSize(50, 50);
 	SetConsoleCursorVisibility(0);
 
 	// 플레이어의 정보
@@ -111,15 +175,13 @@ int main()
 
 	// 게임 맵 세팅
 
-
-
 	// 테두리(외벽) 설정
 	MakeMap('#', map);
 	// 내벽 데이터 넣어주기.
 	map[10][10] = '#';
 
 	RenderMap();
-	
+
 
 	// 게임이 시작하자 마자 종료되는 이슈. -> 무한 반복문
 	while (1)
@@ -129,14 +191,14 @@ int main()
 
 		GoToTargetPos(playerX, playerY, "@");
 
-		InputProcess(&playerX,&playerY); // 플레이어의 입력을 받아서 움직이는 함수.
+		InputProcess(&playerX, &playerY); // 플레이어의 입력을 받아서 움직이는 함수.
 		InteractOther(&playerX, &playerY, &itemX, &itemY, &itemFound);
 
 		if (!itemFound) // player위치 item위치 같을 때
 		{
 			GoToTargetPos(itemX, itemY, "$");
 		}
-		else 
+		else
 		{
 			GoToTargetPos(1, 31, "아이템을 획득했습니다.");
 		}
@@ -156,7 +218,7 @@ int main()
 
 
 		Sleep(50);
+		}
+
+
 	}
-
-
-}									   
