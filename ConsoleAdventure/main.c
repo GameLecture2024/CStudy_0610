@@ -5,7 +5,7 @@
 
 #define ROWS 30	 // 가로
 #define COLS 30	 // 세로   Collums(기둥)
-#define filename "playerData.txt"
+#define filename "C:\\Users\\Administrator\\Desktop\\CStudy_0610\\ConsoleAdventure\\playerData.txt"
 
 char map[COLS][ROWS] = { 0 };	   // 맵 안에있는 데이터
 // ROWS + 1 : 개행 문자 '\n' 더해준 것.
@@ -94,6 +94,34 @@ typedef struct PlayerData
 	char name[30]; // 이름을 저장하기 위한 배열
 	int score;     // 정수 형태로 점수를 저장한다.
 }PlayerData;
+
+typedef enum Level
+{
+	Easy, Normal, Hard
+}Level;
+
+typedef struct GameMode
+{
+	Level level;
+}GameMode;
+
+void CountScoreMethod(int* score, GameMode game)
+{
+	switch (game.level)
+	{
+	case Easy :
+		*score = *score;
+		break;
+	case Normal:
+		*score = (*score) * 2;
+		break;
+	case Hard:
+		*score = (*score) * 3;
+		break;
+	default:
+		break;
+	}
+}
 
 
 void SavePlayerData(PlayerData* player, int totatlCount)
